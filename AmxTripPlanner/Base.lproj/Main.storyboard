@@ -91,6 +91,11 @@
                                     <action selector="searchFlightsButtonTapped:" destination="vIB-35-as0" eventType="touchUpInside" id="ivb-Om-SZo"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UtV-WD-GqR">
+                                <rect key="frame" x="16" y="313" width="361" height="489"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n7Y-ST-7wV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -98,6 +103,7 @@
                     <connections>
                         <outlet property="datePicker" destination="xGb-bs-zzc" id="wdR-CI-u4M"/>
                         <outlet property="fromTextField" destination="wk7-zu-It1" id="mIQ-cW-JJc"/>
+                        <outlet property="tableView" destination="UtV-WD-GqR" id="oEV-Bi-j3O"/>
                         <outlet property="toTextField" destination="u1L-QZ-YgP" id="DYJ-y5-tqn"/>
                     </connections>
                 </viewController>
