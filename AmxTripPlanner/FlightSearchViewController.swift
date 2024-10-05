@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FlightSearchViewController: UIViewController {
+class FlightSearchViewController: UIViewController, UITextFieldDelegate {
     
     
     
@@ -20,6 +20,8 @@ class FlightSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        fromTextField.delegate = self
+        toTextField.delegate = self
     }
     
     var availableFlights: [Flight] = []
