@@ -9,11 +9,6 @@ import UIKit
 
 class FlightSearchViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-
-    }
     
     
     @IBOutlet weak var fromTextField: UITextField!
@@ -21,6 +16,11 @@ class FlightSearchViewController: UIViewController {
     @IBOutlet weak var toTextField: UITextField!
     
     @IBOutlet weak var datePicker: UIDatePicker!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
     
     var availableFlights: [Flight] = []
     var mockDestinations = ["London", "New York", "Delhi", "Paris", "Frankfurt", "Amsterdam",  "Copenhagen"]

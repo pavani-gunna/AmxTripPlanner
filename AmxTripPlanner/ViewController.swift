@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         let password = passwordTextField.text ?? ""
 
         if validateLogin(userId: userId, password: password) {
-//            errorLabel.isHidden = false
+            errorLabel.isHidden = true
 //            errorLabel.text = "valid User ID or Password"
             navigateToFlightSearch()
         } else {
