@@ -61,7 +61,7 @@
         <!--Flight Search View Controller-->
         <scene sceneID="3cr-5v-jy9">
             <objects>
-                <viewController id="vIB-35-as0" customClass="FlightSearchViewController" customModule="AmxTripPlanner" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlightSearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vIB-35-as0" customClass="FlightSearchViewController" customModule="AmxTripPlanner" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pmW-OO-6sx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

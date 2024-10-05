@@ -29,8 +29,9 @@ class ViewController: UIViewController {
         let password = passwordTextField.text ?? ""
 
         if validateLogin(userId: userId, password: password) {
-            errorLabel.isHidden = false
-            errorLabel.text = "valid User ID or Password"
+//            errorLabel.isHidden = false
+//            errorLabel.text = "valid User ID or Password"
+            navigateToFlightSearch()
         } else {
             errorLabel.isHidden = false
             errorLabel.text = "Invalid User ID or Password"
@@ -41,6 +42,10 @@ class ViewController: UIViewController {
             return userId == "admin" && password == "password123"
         }
     
-    
+    func navigateToFlightSearch() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let flightSearchVC = storyboard.instantiateViewController(withIdentifier: "FlightSearchViewController") as! FlightSearchViewController
+        self.navigationController?.pushViewController(flightSearchVC, animated: true)
+    }
 }
 
