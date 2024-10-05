@@ -16,6 +16,9 @@
 		16A0C2A82CB1C6B4008A8351 /* AmxTripPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2A62CB1C6B4008A8351 /* AmxTripPlannerTests.swift */; };
 		16A0C2AC2CB1C6B7008A8351 /* AmxTripPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2A92CB1C6B7008A8351 /* AmxTripPlannerUITests.swift */; };
 		16A0C2AD2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2AA2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift */; };
+		212195F9812B0A18C8051092 /* Pods_AmxTripPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AE5A9043D8671718019E46 /* Pods_AmxTripPlanner.framework */; };
+		27C977FE95C3FA2CA088A62B /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62085554AAF50A625AD27A9 /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework */; };
+		AF8356493FDD625F684C8E1F /* Pods_AmxTripPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4CB7B833D495DFE42422CD /* Pods_AmxTripPlannerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		16A0C2A62CB1C6B4008A8351 /* AmxTripPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmxTripPlannerTests.swift; sourceTree = "<group>"; };
 		16A0C2A92CB1C6B7008A8351 /* AmxTripPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmxTripPlannerUITests.swift; sourceTree = "<group>"; };
 		16A0C2AA2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmxTripPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1FC48EFDBBD010A32AEEAF68 /* Pods-AmxTripPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-AmxTripPlannerTests/Pods-AmxTripPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82C19ED8E7E725580D603D42 /* Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-AmxTripPlanner-AmxTripPlannerUITests/Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		87AE5A9043D8671718019E46 /* Pods_AmxTripPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmxTripPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4CB7B833D495DFE42422CD /* Pods_AmxTripPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmxTripPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15F3BDDC36D77816516CF17 /* Pods-AmxTripPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlanner.debug.xcconfig"; path = "Target Support Files/Pods-AmxTripPlanner/Pods-AmxTripPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		C9B2ABD87EB587AD2DD37E8D /* Pods-AmxTripPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlanner.release.xcconfig"; path = "Target Support Files/Pods-AmxTripPlanner/Pods-AmxTripPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		E9D51E4A6C606D95D7F65CEC /* Pods-AmxTripPlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlannerTests.release.xcconfig"; path = "Target Support Files/Pods-AmxTripPlannerTests/Pods-AmxTripPlannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF59D1F00DAE3D343E9491EB /* Pods-AmxTripPlanner-AmxTripPlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlanner-AmxTripPlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-AmxTripPlanner-AmxTripPlannerUITests/Pods-AmxTripPlanner-AmxTripPlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F62085554AAF50A625AD27A9 /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmxTripPlanner_AmxTripPlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				212195F9812B0A18C8051092 /* Pods_AmxTripPlanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8356493FDD625F684C8E1F /* Pods_AmxTripPlannerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C977FE95C3FA2CA088A62B /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044DA5453ABC9906A3CCFA03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87AE5A9043D8671718019E46 /* Pods_AmxTripPlanner.framework */,
+				F62085554AAF50A625AD27A9 /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework */,
+				BE4CB7B833D495DFE42422CD /* Pods_AmxTripPlannerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		16A0C2582CB1C6A8008A8351 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				16A0C2A72CB1C6B4008A8351 /* AmxTripPlannerTests */,
 				16A0C2AB2CB1C6B7008A8351 /* AmxTripPlannerUITests */,
 				16A0C2622CB1C6A8008A8351 /* Products */,
+				E9DDBB310B7F572DEE36731E /* Pods */,
+				044DA5453ABC9906A3CCFA03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +154,20 @@
 			path = AmxTripPlannerUITests;
 			sourceTree = "<group>";
 		};
+		E9DDBB310B7F572DEE36731E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C15F3BDDC36D77816516CF17 /* Pods-AmxTripPlanner.debug.xcconfig */,
+				C9B2ABD87EB587AD2DD37E8D /* Pods-AmxTripPlanner.release.xcconfig */,
+				82C19ED8E7E725580D603D42 /* Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig */,
+				EF59D1F00DAE3D343E9491EB /* Pods-AmxTripPlanner-AmxTripPlannerUITests.release.xcconfig */,
+				1FC48EFDBBD010A32AEEAF68 /* Pods-AmxTripPlannerTests.debug.xcconfig */,
+				E9D51E4A6C606D95D7F65CEC /* Pods-AmxTripPlannerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16A0C28A2CB1C6A9008A8351 /* Build configuration list for PBXNativeTarget "AmxTripPlanner" */;
 			buildPhases = (
+				8CEF30AC5E1EFEC8286DF3F8 /* [CP] Check Pods Manifest.lock */,
 				16A0C25D2CB1C6A8008A8351 /* Sources */,
 				16A0C25E2CB1C6A8008A8351 /* Frameworks */,
 				16A0C25F2CB1C6A8008A8351 /* Resources */,
@@ -143,8 +185,6 @@
 			dependencies = (
 			);
 			name = AmxTripPlanner;
-			packageProductDependencies = (
-			);
 			productName = AmxTripPlanner;
 			productReference = 16A0C2612CB1C6A8008A8351 /* AmxTripPlanner.app */;
 			productType = "com.apple.product-type.application";
@@ -153,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16A0C28F2CB1C6A9008A8351 /* Build configuration list for PBXNativeTarget "AmxTripPlannerTests" */;
 			buildPhases = (
+				F86928EA045F55DF9A77CDF7 /* [CP] Check Pods Manifest.lock */,
 				16A0C2732CB1C6A9008A8351 /* Sources */,
 				16A0C2742CB1C6A9008A8351 /* Frameworks */,
 				16A0C2752CB1C6A9008A8351 /* Resources */,
+				0BBDCFFDA53DC394871E7B09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,8 +205,6 @@
 				16A0C2792CB1C6A9008A8351 /* PBXTargetDependency */,
 			);
 			name = AmxTripPlannerTests;
-			packageProductDependencies = (
-			);
 			productName = AmxTripPlannerTests;
 			productReference = 16A0C2772CB1C6A9008A8351 /* AmxTripPlannerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -173,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16A0C2922CB1C6A9008A8351 /* Build configuration list for PBXNativeTarget "AmxTripPlannerUITests" */;
 			buildPhases = (
+				30009C95AE8246B2A981D07A /* [CP] Check Pods Manifest.lock */,
 				16A0C27D2CB1C6A9008A8351 /* Sources */,
 				16A0C27E2CB1C6A9008A8351 /* Frameworks */,
 				16A0C27F2CB1C6A9008A8351 /* Resources */,
+				5698872CC684F0861CDCDFE5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,8 +225,6 @@
 				16A0C2832CB1C6A9008A8351 /* PBXTargetDependency */,
 			);
 			name = AmxTripPlannerUITests;
-			packageProductDependencies = (
-			);
 			productName = AmxTripPlannerUITests;
 			productReference = 16A0C2812CB1C6A9008A8351 /* AmxTripPlannerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -258,6 +298,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BBDCFFDA53DC394871E7B09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlannerTests/Pods-AmxTripPlannerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlannerTests/Pods-AmxTripPlannerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlannerTests/Pods-AmxTripPlannerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30009C95AE8246B2A981D07A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmxTripPlanner-AmxTripPlannerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5698872CC684F0861CDCDFE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlanner-AmxTripPlannerUITests/Pods-AmxTripPlanner-AmxTripPlannerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlanner-AmxTripPlannerUITests/Pods-AmxTripPlanner-AmxTripPlannerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlanner-AmxTripPlannerUITests/Pods-AmxTripPlanner-AmxTripPlannerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CEF30AC5E1EFEC8286DF3F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmxTripPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F86928EA045F55DF9A77CDF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmxTripPlannerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16A0C25D2CB1C6A8008A8351 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -323,6 +466,7 @@
 /* Begin XCBuildConfiguration section */
 		16A0C28B2CB1C6A9008A8351 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15F3BDDC36D77816516CF17 /* Pods-AmxTripPlanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -351,6 +495,7 @@
 		};
 		16A0C28C2CB1C6A9008A8351 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B2ABD87EB587AD2DD37E8D /* Pods-AmxTripPlanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -498,6 +643,7 @@
 		};
 		16A0C2902CB1C6A9008A8351 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC48EFDBBD010A32AEEAF68 /* Pods-AmxTripPlannerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +663,7 @@
 		};
 		16A0C2912CB1C6A9008A8351 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9D51E4A6C606D95D7F65CEC /* Pods-AmxTripPlannerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +683,7 @@
 		};
 		16A0C2932CB1C6A9008A8351 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82C19ED8E7E725580D603D42 /* Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -553,6 +701,7 @@
 		};
 		16A0C2942CB1C6A9008A8351 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF59D1F00DAE3D343E9491EB /* Pods-AmxTripPlanner-AmxTripPlannerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
