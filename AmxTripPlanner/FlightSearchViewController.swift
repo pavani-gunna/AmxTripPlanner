@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FlightSearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
+class FlightSearchViewController: UIViewController, UITextFieldDelegate {
     
     
     
@@ -19,6 +19,10 @@ class FlightSearchViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBOutlet weak var tableView: UITableView!
     
+    var availableFlights: [Flight] = []
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,9 +30,11 @@ class FlightSearchViewController: UIViewController, UITableViewDataSource, UITab
         toTextField.delegate = self
         tableView.dataSource = self
         tableView.delegate = self
+        
+        
     }
     
-    var availableFlights: [Flight] = []
+    
     var mockDestinations = ["London", "New York", "Delhi", "Paris", "Frankfurt", "Amsterdam",  "Copenhagen"]
     
     
@@ -37,6 +43,7 @@ class FlightSearchViewController: UIViewController, UITableViewDataSource, UITab
         let to = toTextField.text ?? ""
         let date = datePicker.date
         availableFlights = searchFlights(from: from, to: to, date: date)
+        tableView.reloadData()
     }
     
     func searchFlights(from: String, to: String, date: Date) -> [Flight] {
@@ -59,6 +66,16 @@ class FlightSearchViewController: UIViewController, UITableViewDataSource, UITab
         print(suggestions)
     }
     
+}
+
+extension FlightSearchViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Flights Avaliable")
+    }
+}
+
+
+extension FlightSearchViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return availableFlights.count
     }
@@ -66,11 +83,12 @@ class FlightSearchViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FlightCell", for: indexPath)
         let flight = availableFlights[indexPath.row]
-        cell.textLabel?.text = "\(flight.flightNumber) - \(flight.from) to \(flight.to)"
-        cell.detailTextLabel?.text = "Departure: \(flight.departureTime), Arrival: \(flight.arrivalTime)"
+        cell.textLabel?.text = "\(flight.flightNumber) - \(flight.from) - \(flight.to)"
         return cell
     }
 }
+
+
 
 struct Flight {
     var flightNumber: String
