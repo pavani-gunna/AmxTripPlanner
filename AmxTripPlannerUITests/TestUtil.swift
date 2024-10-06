@@ -13,6 +13,7 @@ class TestUtil {
     
     private init() {}
     
+    
     func tapAndSetTextFieldValue(app: XCUIApplication, textFieldIdentifier: String, value: String){
         let textField = app.textFields[textFieldIdentifier]
         XCTAssertTrue(textField.exists, "TextField with identifier \(textFieldIdentifier) does not exist")
