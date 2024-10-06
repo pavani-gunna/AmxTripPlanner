@@ -32,10 +32,18 @@ final class AmxTripPlannerUITests: XCTestCase {
         TestUtil.UTIL.tapAndSetTextFieldValue(app: app, textFieldIdentifier: "userID", value: "admin")
         TestUtil.UTIL.tapAndSetSecureTextField(app: app, secureTextFieldIdentifier:  "password",  value: "password123")
         TestUtil.UTIL.tapButton(app: app, buttonIdentifier: "Signin")
-        TestUtil.UTIL.tapAndSetTextFieldValue(app: app, textFieldIdentifier: "from", value: "London")
+                TestUtil.UTIL.tapAndSetTextFieldValue(app: app, textFieldIdentifier: "from", value: "London")
     }
 
+    func testinValidlogin() throws {
+        let app = XCUIApplication()
 
+        TestUtil.UTIL.tapAndSetTextFieldValue(app: app, textFieldIdentifier: "userID", value: "admin1")
+        TestUtil.UTIL.tapAndSetSecureTextField(app: app, secureTextFieldIdentifier:  "password",  value: "password123")
+        TestUtil.UTIL.tapButton(app: app, buttonIdentifier: "Signin")
+        XCTAssert(app.staticTexts["Invalid User ID or Password"].exists)
+        
+    }
     
 
 }
