@@ -17,6 +17,7 @@
 		16A0C2AC2CB1C6B7008A8351 /* AmxTripPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2A92CB1C6B7008A8351 /* AmxTripPlannerUITests.swift */; };
 		16A0C2AD2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2AA2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift */; };
 		16A0C2B12CB1D396008A8351 /* FlightSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2B02CB1D394008A8351 /* FlightSearchViewController.swift */; };
+		16A0C2B42CB209DB008A8351 /* TestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2B32CB209CE008A8351 /* TestUtil.swift */; };
 		212195F9812B0A18C8051092 /* Pods_AmxTripPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AE5A9043D8671718019E46 /* Pods_AmxTripPlanner.framework */; };
 		27C977FE95C3FA2CA088A62B /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62085554AAF50A625AD27A9 /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework */; };
 		AF8356493FDD625F684C8E1F /* Pods_AmxTripPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4CB7B833D495DFE42422CD /* Pods_AmxTripPlannerTests.framework */; };
@@ -54,6 +55,8 @@
 		16A0C2A92CB1C6B7008A8351 /* AmxTripPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmxTripPlannerUITests.swift; sourceTree = "<group>"; };
 		16A0C2AA2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmxTripPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		16A0C2B02CB1D394008A8351 /* FlightSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchViewController.swift; sourceTree = "<group>"; };
+		16A0C2B22CB1FF8B008A8351 /* AmxTripPlannerUI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = AmxTripPlannerUI.xctestplan; path = ../../AmxTripPlannerUI.xctestplan; sourceTree = "<group>"; };
+		16A0C2B32CB209CE008A8351 /* TestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtil.swift; sourceTree = "<group>"; };
 		1FC48EFDBBD010A32AEEAF68 /* Pods-AmxTripPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-AmxTripPlannerTests/Pods-AmxTripPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		82C19ED8E7E725580D603D42 /* Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-AmxTripPlanner-AmxTripPlannerUITests/Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		87AE5A9043D8671718019E46 /* Pods_AmxTripPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmxTripPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +154,8 @@
 		16A0C2AB2CB1C6B7008A8351 /* AmxTripPlannerUITests */ = {
 			isa = PBXGroup;
 			children = (
+				16A0C2B32CB209CE008A8351 /* TestUtil.swift */,
+				16A0C2B22CB1FF8B008A8351 /* AmxTripPlannerUI.xctestplan */,
 				16A0C2A92CB1C6B7008A8351 /* AmxTripPlannerUITests.swift */,
 				16A0C2AA2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift */,
 			);
@@ -429,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16A0C2AC2CB1C6B7008A8351 /* AmxTripPlannerUITests.swift in Sources */,
+				16A0C2B42CB209DB008A8351 /* TestUtil.swift in Sources */,
 				16A0C2AD2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,7 +569,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -626,7 +632,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
