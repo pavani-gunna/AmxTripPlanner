@@ -47,10 +47,15 @@ class FlightSearchViewController: UIViewController, UITextFieldDelegate {
     }
     
     func searchFlights(from: String, to: String, date: Date) -> [Flight] {
-        return [
-            Flight(flightNumber: "AA101", from: from, to: to, departureTime: "09:00 AM", arrivalTime: "12:00 PM"),
-            Flight(flightNumber: "DL203", from: from, to: to, departureTime: "11:00 AM", arrivalTime: "02:00 PM"),
-        ]
+        return containsCaseInsensitive(list: mockDestinations, destination: from) &&
+            containsCaseInsensitive(list: mockDestinations, destination: to) ? [
+                Flight(flightNumber: "AA101", from: from, to: to, departureTime: "09:00 AM", arrivalTime: "12:00 PM"),
+                Flight(flightNumber: "DL203", from: from, to: to, departureTime: "11:00 AM", arrivalTime: "02:00 PM"),
+            ] : []
+    }
+    
+    func containsCaseInsensitive(list: [String], destination: String) -> Bool {
+        return list.contains { $0.lowercased() == destination.lowercased() }
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
