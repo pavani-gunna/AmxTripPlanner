@@ -42,4 +42,19 @@ class TestUtil {
         button.tap()
     }
     
+    
+    func anExpectation(element: XCUIElement, errorMessage: String) {
+        let existsPredicate = NSPredicate(format: "exists == true")
+        
+        // Create an expectation for the predicate to be fulfilled within 5 seconds
+        let expectation = XCTNSPredicateExpectation(predicate: existsPredicate, object: element)
+        
+        // Wait for the expectation to be fulfilled
+        let result = XCTWaiter().wait(for: [expectation], timeout: 5)
+        
+        // Check if the expectation was met
+        XCTAssertEqual(result, .completed, errorMessage)
+    }
+    
+    
 }

@@ -33,7 +33,13 @@ final class AmxTripPlannerUITests: XCTestCase {
         TestUtil.UTIL.tapAndSetSecureTextField(app: app, secureTextFieldIdentifier:  "password",  value: "password123")
         TestUtil.UTIL.tapButton(app: app, buttonIdentifier: "Signin")
         XCTAssert(!(app.staticTexts["Invalid User ID or Password"].exists))
-        TestUtil.UTIL.tapAndSetTextFieldValue(app: app, textFieldIdentifier: "from", value: "London")
+//        let fromTextField = app.textFields["From"]
+        TestUtil.UTIL.anExpectation(element: app.textFields["From"], errorMessage: "Failed to navigate to the flight search page.")
+//        let existsPredicate = NSPredicate(format: "exists == true")
+//        let expectation = XCTNSPredicateExpectation(predicate: existsPredicate, object: fromTextField)
+//        let result = XCTWaiter().wait(for: [expectation], timeout: 5)
+//        XCTAssertEqual(result, .completed, "Failed to navigate to the flight search page.")
+
     }
 
     func testinValidlogin() throws {
