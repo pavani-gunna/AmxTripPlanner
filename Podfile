@@ -15,6 +15,7 @@ target 'AmxTripPlanner' do
 
   target 'AmxTripPlannerUITests' do
     # Pods for testing
+    inherit! :search_paths
     pod 'Cucumberish'
   end
 

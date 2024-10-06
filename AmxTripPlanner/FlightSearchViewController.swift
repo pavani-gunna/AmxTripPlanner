@@ -30,8 +30,6 @@ class FlightSearchViewController: UIViewController, UITextFieldDelegate {
         toTextField.delegate = self
         tableView.dataSource = self
         tableView.delegate = self
-        
-        
     }
     
     
@@ -49,7 +47,6 @@ class FlightSearchViewController: UIViewController, UITextFieldDelegate {
     func searchFlights(from: String, to: String, date: Date) -> [Flight] {
         return containsCaseInsensitive(list: mockDestinations, destination: from) &&
             containsCaseInsensitive(list: mockDestinations, destination: to) ? [
-                Flight(flightNumber: "AA101", from: from, to: to, departureTime: "09:00 AM", arrivalTime: "12:00 PM"),
                 Flight(flightNumber: "DL203", from: from, to: to, departureTime: "11:00 AM", arrivalTime: "02:00 PM"),
             ] : []
     }
@@ -82,18 +79,22 @@ extension FlightSearchViewController: UITableViewDelegate{
 
 extension FlightSearchViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tableView.accessibilityLabel = "flightsAvaliable"
+        tableView.isAccessibilityElement = true
         return availableFlights.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FlightCell", for: indexPath)
         let flight = availableFlights[indexPath.row]
-        cell.textLabel?.text = "\(flight.flightNumber) - \(flight.from) - \(flight.to)"
+        let flightDetails = "\(flight.flightNumber) - \(flight.from) - \(flight.to)"
+        
+        cell.textLabel?.text = flightDetails
+        cell.accessibilityLabel = flightDetails
+        cell.accessibilityIdentifier = "FlightCell_\(indexPath.row)"
         return cell
     }
 }
-
-
 
 struct Flight {
     var flightNumber: String

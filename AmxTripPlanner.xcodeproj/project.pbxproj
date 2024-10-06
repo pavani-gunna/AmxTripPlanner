@@ -15,11 +15,13 @@
 		16A0C2A52CB1C6AF008A8351 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C29D2CB1C6AF008A8351 /* ViewController.swift */; };
 		16A0C2A82CB1C6B4008A8351 /* AmxTripPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2A62CB1C6B4008A8351 /* AmxTripPlannerTests.swift */; };
 		16A0C2AC2CB1C6B7008A8351 /* AmxTripPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2A92CB1C6B7008A8351 /* AmxTripPlannerUITests.swift */; };
-		16A0C2AD2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2AA2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift */; };
 		16A0C2B12CB1D396008A8351 /* FlightSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2B02CB1D394008A8351 /* FlightSearchViewController.swift */; };
 		16A0C2B42CB209DB008A8351 /* TestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2B32CB209CE008A8351 /* TestUtil.swift */; };
+		16A0C2C62CB2BA62008A8351 /* Pods_AmxTripPlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A0C2C52CB2BA62008A8351 /* Pods_AmxTripPlannerUITests.framework */; };
+		16A0C2C72CB2BA62008A8351 /* Pods_AmxTripPlannerUITests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16A0C2C52CB2BA62008A8351 /* Pods_AmxTripPlannerUITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16A0C2CC2CB2D305008A8351 /* TestSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2CB2CB2D2FE008A8351 /* TestSearch.swift */; };
+		16A0C2D02CB2DAE3008A8351 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0C2CF2CB2DADF008A8351 /* TestData.swift */; };
 		212195F9812B0A18C8051092 /* Pods_AmxTripPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AE5A9043D8671718019E46 /* Pods_AmxTripPlanner.framework */; };
-		27C977FE95C3FA2CA088A62B /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62085554AAF50A625AD27A9 /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework */; };
 		AF8356493FDD625F684C8E1F /* Pods_AmxTripPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4CB7B833D495DFE42422CD /* Pods_AmxTripPlannerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +42,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		16A0C2C82CB2BA62008A8351 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16A0C2C72CB2BA62008A8351 /* Pods_AmxTripPlannerUITests.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		00C4EB52D245901B520A3E22 /* Pods-AmxTripPlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-AmxTripPlannerUITests/Pods-AmxTripPlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		16A0C2612CB1C6A8008A8351 /* AmxTripPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmxTripPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A0C2772CB1C6A9008A8351 /* AmxTripPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmxTripPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A0C2812CB1C6A9008A8351 /* AmxTripPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmxTripPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,11 +70,16 @@
 		16A0C29D2CB1C6AF008A8351 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16A0C2A62CB1C6B4008A8351 /* AmxTripPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmxTripPlannerTests.swift; sourceTree = "<group>"; };
 		16A0C2A92CB1C6B7008A8351 /* AmxTripPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmxTripPlannerUITests.swift; sourceTree = "<group>"; };
-		16A0C2AA2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmxTripPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		16A0C2B02CB1D394008A8351 /* FlightSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchViewController.swift; sourceTree = "<group>"; };
 		16A0C2B22CB1FF8B008A8351 /* AmxTripPlannerUI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = AmxTripPlannerUI.xctestplan; path = ../../AmxTripPlannerUI.xctestplan; sourceTree = "<group>"; };
 		16A0C2B32CB209CE008A8351 /* TestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtil.swift; sourceTree = "<group>"; };
+		16A0C2C02CB2AEAF008A8351 /* Cucumberish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cucumberish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16A0C2C52CB2BA62008A8351 /* Pods_AmxTripPlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AmxTripPlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16A0C2CB2CB2D2FE008A8351 /* TestSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSearch.swift; sourceTree = "<group>"; };
+		16A0C2CF2CB2DADF008A8351 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		1FC48EFDBBD010A32AEEAF68 /* Pods-AmxTripPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-AmxTripPlannerTests/Pods-AmxTripPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		215AD583CC410B822665E294 /* Pods_AmxTripPlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmxTripPlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46BB58B31BABECF317E1A2A9 /* Pods-AmxTripPlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-AmxTripPlannerUITests/Pods-AmxTripPlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		82C19ED8E7E725580D603D42 /* Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-AmxTripPlanner-AmxTripPlannerUITests/Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		87AE5A9043D8671718019E46 /* Pods_AmxTripPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmxTripPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4CB7B833D495DFE42422CD /* Pods_AmxTripPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmxTripPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +87,6 @@
 		C9B2ABD87EB587AD2DD37E8D /* Pods-AmxTripPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlanner.release.xcconfig"; path = "Target Support Files/Pods-AmxTripPlanner/Pods-AmxTripPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		E9D51E4A6C606D95D7F65CEC /* Pods-AmxTripPlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlannerTests.release.xcconfig"; path = "Target Support Files/Pods-AmxTripPlannerTests/Pods-AmxTripPlannerTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF59D1F00DAE3D343E9491EB /* Pods-AmxTripPlanner-AmxTripPlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmxTripPlanner-AmxTripPlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-AmxTripPlanner-AmxTripPlannerUITests/Pods-AmxTripPlanner-AmxTripPlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F62085554AAF50A625AD27A9 /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmxTripPlanner_AmxTripPlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27C977FE95C3FA2CA088A62B /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework in Frameworks */,
+				16A0C2C62CB2BA62008A8351 /* Pods_AmxTripPlannerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +120,11 @@
 		044DA5453ABC9906A3CCFA03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16A0C2C52CB2BA62008A8351 /* Pods_AmxTripPlannerUITests.framework */,
+				16A0C2C02CB2AEAF008A8351 /* Cucumberish.framework */,
 				87AE5A9043D8671718019E46 /* Pods_AmxTripPlanner.framework */,
-				F62085554AAF50A625AD27A9 /* Pods_AmxTripPlanner_AmxTripPlannerUITests.framework */,
 				BE4CB7B833D495DFE42422CD /* Pods_AmxTripPlannerTests.framework */,
+				215AD583CC410B822665E294 /* Pods_AmxTripPlannerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,10 +177,11 @@
 		16A0C2AB2CB1C6B7008A8351 /* AmxTripPlannerUITests */ = {
 			isa = PBXGroup;
 			children = (
+				16A0C2CF2CB2DADF008A8351 /* TestData.swift */,
+				16A0C2CB2CB2D2FE008A8351 /* TestSearch.swift */,
 				16A0C2B32CB209CE008A8351 /* TestUtil.swift */,
 				16A0C2B22CB1FF8B008A8351 /* AmxTripPlannerUI.xctestplan */,
 				16A0C2A92CB1C6B7008A8351 /* AmxTripPlannerUITests.swift */,
-				16A0C2AA2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift */,
 			);
 			path = AmxTripPlannerUITests;
 			sourceTree = "<group>";
@@ -171,6 +195,8 @@
 				EF59D1F00DAE3D343E9491EB /* Pods-AmxTripPlanner-AmxTripPlannerUITests.release.xcconfig */,
 				1FC48EFDBBD010A32AEEAF68 /* Pods-AmxTripPlannerTests.debug.xcconfig */,
 				E9D51E4A6C606D95D7F65CEC /* Pods-AmxTripPlannerTests.release.xcconfig */,
+				00C4EB52D245901B520A3E22 /* Pods-AmxTripPlannerUITests.debug.xcconfig */,
+				46BB58B31BABECF317E1A2A9 /* Pods-AmxTripPlannerUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -225,6 +251,7 @@
 				16A0C27E2CB1C6A9008A8351 /* Frameworks */,
 				16A0C27F2CB1C6A9008A8351 /* Resources */,
 				5698872CC684F0861CDCDFE5 /* [CP] Embed Pods Frameworks */,
+				16A0C2C82CB2BA62008A8351 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,7 +366,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AmxTripPlanner-AmxTripPlannerUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AmxTripPlannerUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -352,15 +379,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlanner-AmxTripPlannerUITests/Pods-AmxTripPlanner-AmxTripPlannerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlannerUITests/Pods-AmxTripPlannerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlanner-AmxTripPlannerUITests/Pods-AmxTripPlanner-AmxTripPlannerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlannerUITests/Pods-AmxTripPlannerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlanner-AmxTripPlannerUITests/Pods-AmxTripPlanner-AmxTripPlannerUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmxTripPlannerUITests/Pods-AmxTripPlannerUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8CEF30AC5E1EFEC8286DF3F8 /* [CP] Check Pods Manifest.lock */ = {
@@ -434,8 +461,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				16A0C2AC2CB1C6B7008A8351 /* AmxTripPlannerUITests.swift in Sources */,
+				16A0C2CC2CB2D305008A8351 /* TestSearch.swift in Sources */,
+				16A0C2D02CB2DAE3008A8351 /* TestData.swift in Sources */,
 				16A0C2B42CB209DB008A8351 /* TestUtil.swift in Sources */,
-				16A0C2AD2CB1C6B7008A8351 /* AmxTripPlannerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,16 +721,24 @@
 		};
 		16A0C2932CB1C6A9008A8351 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82C19ED8E7E725580D603D42 /* Pods-AmxTripPlanner-AmxTripPlannerUITests.debug.xcconfig */;
+			baseConfigurationReference = 00C4EB52D245901B520A3E22 /* Pods-AmxTripPlannerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K87U4BY93J;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Cucumberish\"",
+					"-framework",
+					"\"XCTest\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = coalesceworks.uk.AmxTripPlannerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = AmxTripPlanner;
@@ -711,16 +747,24 @@
 		};
 		16A0C2942CB1C6A9008A8351 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF59D1F00DAE3D343E9491EB /* Pods-AmxTripPlanner-AmxTripPlannerUITests.release.xcconfig */;
+			baseConfigurationReference = 46BB58B31BABECF317E1A2A9 /* Pods-AmxTripPlannerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K87U4BY93J;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Cucumberish\"",
+					"-framework",
+					"\"XCTest\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = coalesceworks.uk.AmxTripPlannerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = AmxTripPlanner;

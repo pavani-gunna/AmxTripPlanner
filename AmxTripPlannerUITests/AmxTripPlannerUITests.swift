@@ -15,8 +15,6 @@ final class AmxTripPlannerUITests: XCTestCase {
 
         continueAfterFailure = false
         XCUIApplication().launch()
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
@@ -29,28 +27,37 @@ final class AmxTripPlannerUITests: XCTestCase {
     func testvalidlogin() throws {
         let app = XCUIApplication()
 
-        TestUtil.UTIL.tapAndSetTextFieldValue(app: app, textFieldIdentifier: "userID", value: "admin")
-        TestUtil.UTIL.tapAndSetSecureTextField(app: app, secureTextFieldIdentifier:  "password",  value: "password123")
-        TestUtil.UTIL.tapButton(app: app, buttonIdentifier: "Signin")
-        XCTAssert(!(app.staticTexts["Invalid User ID or Password"].exists))
-//        let fromTextField = app.textFields["From"]
-        TestUtil.UTIL.anExpectation(element: app.textFields["From"], errorMessage: "Failed to navigate to the flight search page.")
-//        let existsPredicate = NSPredicate(format: "exists == true")
-//        let expectation = XCTNSPredicateExpectation(predicate: existsPredicate, object: fromTextField)
-//        let result = XCTWaiter().wait(for: [expectation], timeout: 5)
-//        XCTAssertEqual(result, .completed, "Failed to navigate to the flight search page.")
-
-    }
-
-    func testinValidlogin() throws {
-        let app = XCUIApplication()
-
-        TestUtil.UTIL.tapAndSetTextFieldValue(app: app, textFieldIdentifier: "userID", value: "admin1")
-        TestUtil.UTIL.tapAndSetSecureTextField(app: app, secureTextFieldIdentifier:  "password",  value: "password123")
-        TestUtil.UTIL.tapButton(app: app, buttonIdentifier: "Signin")
-        XCTAssert(app.staticTexts["Invalid User ID or Password"].exists)
+        TestUtil.UTIL.tapAndSetTextFieldValue(app: app,
+                                              textFieldIdentifier: TestData.LoginElementIDs.usernameTextField,
+                                              value: TestData.validMockData.username)
+        TestUtil.UTIL.tapAndSetSecureTextField(app: app,
+                                               secureTextFieldIdentifier:  TestData.LoginElementIDs.passwordSecureField,
+                                               value: TestData.validMockData.password)
+        TestUtil.UTIL.tapButton(app: app,
+                                buttonIdentifier: TestData.LoginElementIDs.signinButton)
+        XCTAssert(!(app.staticTexts[TestData.LoginElementIDs.errorLabel].exists))
+        TestUtil.UTIL.anExpectation(element: app.textFields[TestData.SearchElementIDs.fromTextField],
+                                    errorMessage: "Failed to navigate to the flight search page.")
         
+        
+        func testinValidlogin() throws {
+            let app = XCUIApplication()
+            
+            TestUtil.UTIL.tapAndSetTextFieldValue(app: app,
+                                                  textFieldIdentifier: TestData.LoginElementIDs.usernameTextField,
+                                                  value: TestData.inValidMockData.from)
+            TestUtil.UTIL.tapAndSetSecureTextField(app: app,
+                                                   secureTextFieldIdentifier:  TestData.LoginElementIDs.passwordSecureField,
+                                                   value: TestData.inValidMockData.to)
+            TestUtil.UTIL.tapButton(app: app,
+                                    buttonIdentifier: TestData.LoginElementIDs.signinButton)
+
+            XCTAssert(app.staticTexts[TestData.LoginElementIDs.errorLabel].exists)
+            
+        }
+                
     }
+
     
 
 }
