@@ -41,8 +41,6 @@ struct TestData {
     }
     
     struct testMessages {
-        static let username = "admin1"
-        static let password = "password1234"
         static let flightsAvaliableTableViewError = "The flights table view does not exist."
         static let noFlightsAvaliable = "No flights available in the table view."
         static let flightsCellNotFound = "The first flight cell does not exist."
